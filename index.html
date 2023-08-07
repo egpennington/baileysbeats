@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Bailey's Beats</title>
+</head>
+<body>
+  <h1>Bailey's Beats</h1>
+  
+  <div class="container">
+    <button class="drum-button" id="hi-hat">Hi-Hat</button>
+    <button class="drum-button" id="snare">Snare</button>
+    <button class="drum-button kick" id="kick">Kick</button>
+    <button class="drum-button" id="tom">Tom</button>
+    <button class="drum-button" id="ride">Ride</button>
+    <div class="extra-sounds">
+      <button class="drum-button" id="boom">Boom</button>
+      <button class="drum-button" id="clap">Clap</button>
+      <button class="drum-button" id="tink">Tink</button>
+    </div>
+    
+  </div>
+  <footer>pennington programming &copy 2023 Bailey's Beats</footer>
+
+    <!-- Preload the kick sound -->
+    <audio id="hihat-sound" preload="auto">
+      <source src="sounds/hihat.wav" type="audio/wav">
+    </audio>
+    <audio id="snare-sound" preload="auto">
+      <source src="sounds/snare.wav" type="audio/wav">
+    </audio>
+    <audio id="kick-sound" preload="auto">
+      <source src="sounds/kick.wav" type="audio/wav">
+    </audio>
+    <audio id="tom-sound" preload="auto">
+      <source src="sounds/tom.wav" type="audio/wav">
+    </audio>
+    <audio id="ride-sound" preload="auto">
+      <source src="sounds/ride.wav" type="audio/wav">
+    </audio>
+    <audio id="boom-sound" preload="auto">
+      <source src="sounds/boom.wav" type="audio/wav">
+    </audio>
+    <audio id="clap-sound" preload="auto">
+      <source src="sounds/clap.wav" type="audio/wav">
+    </audio>
+    <audio id="tink-sound" preload="auto">
+      <source src="sounds/tink.wav" type="audio/wav">
+    </audio>
+  
+  <script src="/js/main.js"></script>
+</body>
+</html>
