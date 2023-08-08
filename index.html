@@ -5,24 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
   <title>Bailey's Beats</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-  <h1>Bailey's Beats</h1>
+<body> 
   
   <div class="container">
-    <button class="drum-button" id="hi-hat">Hi-Hat</button>
-    <button class="drum-button" id="snare">Snare</button>
-    <button class="drum-button kick" id="kick">Kick</button>
-    <button class="drum-button" id="tom">Tom</button>
-    <button class="drum-button" id="ride">Ride</button>
-    <div class="extra-sounds">
-      <button class="drum-button" id="boom">Boom</button>
-      <button class="drum-button" id="clap">Clap</button>
-      <button class="drum-button" id="tink">Tink</button>
+    <header>
+      <h1><i class="fa-solid fa-drum"></i> Bailey's Beats  <i class="fa-solid fa-drum"></i></h1>
+    </header>
+    <div class="box1">
+      <button class="drum-button" id="hi-hat">Hihddat (d)</button>
+      <button class="drum-button" id="snare">Snare (c)</button>
     </div>
+       
+    <div class="box2">
+      <button class="drum-button kick" id="kick">Kick (space)</button>
+    </div>    
     
-  </div>
-  <footer>pennington programming &copy 2023 Bailey's Beats</footer>
+    <div class="box3">
+      <button class="drum-button" id="ride">Ride (k)</button>
+      <button class="drum-button" id="tom">Tom (m)</button>
+    </div>
+
+   <div class="box4">
+      <button class="drum-button" id="clap">Clap (v)</button>
+      <button class="drum-button" id="boom">Boom (b)</button>
+      <button class="drum-button" id="tink">Tink (n)</button>
+    </div>
+    <footer>pennington programming &copy 2023 Bailey's Beats</footer>
+  </div>  
 
     <!-- Preload the kick sound -->
     <audio id="hihat-sound" preload="auto">
@@ -48,8 +59,7 @@
     </audio>
     <audio id="tink-sound" preload="auto">
       <source src="sounds/tink.wav" type="audio/wav">
-    </audio>
-  
+    </audio>  
   <script src="/js/main.js"></script>
 </body>
 </html>
