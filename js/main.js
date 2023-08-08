@@ -1,13 +1,13 @@
 // Define the drum buttons and their corresponding sounds
 const drumElements = [
   { buttonId: "hi-hat", soundId: "hihat-sound", key: "d" },
-  { buttonId: "snare", soundId: "snare-sound", key: "f" },
-  { buttonId: "kick", soundId: "kick-sound", key: "a" },
-  { buttonId: "tom", soundId: "tom-sound", key: "g" },
-  { buttonId: "ride", soundId: "ride-sound", key: "s" },
-  { buttonId: "boom", soundId: "boom-sound", key: "j" },
-  { buttonId: "clap", soundId: "clap-sound", key: "k" },
-  { buttonId: "tink", soundId: "tink-sound", key: "l" },
+  { buttonId: "snare", soundId: "snare-sound", key: "c" },
+  { buttonId: "kick", soundId: "kick-sound", key: " " },
+  { buttonId: "tom", soundId: "tom-sound", key: "m" },
+  { buttonId: "ride", soundId: "ride-sound", key: "k" },
+  { buttonId: "boom", soundId: "boom-sound", key: "b" },
+  { buttonId: "clap", soundId: "clap-sound", key: "v" },
+  { buttonId: "tink", soundId: "tink-sound", key: "n" },
 ];
 
 // Function to play a drum sound and light up the button
@@ -23,7 +23,6 @@ function playDrumSoundAndLightUp(soundElement, buttonElement) {
     buttonElement.classList.remove("active");
   }, 100); // Adjust the duration as needed
 }
-
 
 // Add click event listeners to drum buttons
 drumElements.forEach(drum => {
