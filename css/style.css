@@ -21,13 +21,50 @@ h1 {
   font-size: 3rem;
   color: #fff;
   margin-top: 20px;
-  padding: 15px;
+  padding: 30px;
 }
 
 .container {
-  display: inline-block;
-  margin-top: 100px;  
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "box1 box2 box3"
+    "box1 box2 box3"
+    "box4 box4 box4"
+    "footer footer footer";
+  grid-gap: 10px;
   padding: 20px;
+  margin-top: 40px;
+  max-width: 420px;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box1 {
+  grid-area: box1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box4 {
+  grid-area: box4;
+  text-align: center;
 }
 
 .drum-kit {
@@ -56,13 +93,16 @@ h1 {
 
 .kick {
   width: 200px;
-  height: 200px;
+  height: 200px;  
 }
 
 footer {
+  grid-area: footer;
   font-size: 0.8rem;
-  margin-top: auto;
-  padding: 10px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
   border: none;
   border-radius: 15px;
   color: #fff;
